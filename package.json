@@ -1,8 +1,8 @@
 {
   "name": "isnumberic",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "verify number, is odd, is even",
-  "main": "isnumberic.js",
+  "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
@@ -23,7 +23,7 @@
   "author": "nartvt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nartvt/isNumberic/issues"
+    "url": "https://github.com/nartvt/isnumberic/issues"
   },
-  "homepage": "https://github.com/nartvt/isNumberic#readme"
+  "homepage": "https://github.com/nartvt/isnumberic#readme"
 }
