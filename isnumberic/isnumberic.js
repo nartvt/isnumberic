@@ -1,4 +1,4 @@
-function isNummeric(num) {
+function isNumberic(num) {
   if (num === undefined) {
     return false;
   }
@@ -21,11 +21,21 @@ function isNummeric(num) {
   }
 }
 
-console.log("1 - ", isNummeric(undefined));
-console.log("2 - ", isNummeric(null));
-console.log("3 - ", isNummeric("123456"));
-console.log("4 - ", isNummeric(123456));
-console.log("5 - ", isNummeric(""));
-console.log("6 - ", isNummeric("12.3"));
-console.log("7 - ", isNummeric("sa"));
-console.log("8 - ", isNummeric("12sa"));
+function isOdd(num) {
+  if (isNumberic(num)) {
+    if (Number(num) % 2 === 0) {
+      return false;
+    }
+    return true;
+  }
+  throw "Input parameter is not a number!";
+}
+
+function isEven(num) {
+  if (isNumberic(num)) {
+    return !isOdd(num);
+  }
+  throw "Input parameter is not a number!";
+}
+
+export { isNumberic, isOdd, isEven };
