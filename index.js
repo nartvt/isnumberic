@@ -1,4 +1,4 @@
-function isNummeric(num) {
+function isNumberic(num) {
   if (num === undefined) {
     return false;
   }
@@ -20,12 +20,3 @@ function isNummeric(num) {
     return isNaN(num) ? false : true;
   }
 }
-
-console.log("1 - ", isNummeric(undefined));
-console.log("2 - ", isNummeric(null));
-console.log("3 - ", isNummeric("123456"));
-console.log("4 - ", isNummeric(123456));
-console.log("5 - ", isNummeric(""));
-console.log("6 - ", isNummeric("12.3"));
-console.log("7 - ", isNummeric("sa"));
-console.log("8 - ", isNummeric("12sa"));
