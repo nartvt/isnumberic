@@ -15,7 +15,7 @@ veify input belong to number or not
 
 # Example 
 
-    var { isNumberic, isEven, isOdd } = require("./isnumberic");
+    var { isNumberic, isEven, isOdd } = require("./index");
 
     isNumberic(10); //-> true
     isNumberic("10");  -> true 

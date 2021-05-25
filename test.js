@@ -1,4 +1,4 @@
-var { isNumberic, isEven, isOdd } = require("./isnumberic");
+var { isNumberic, isEven, isOdd } = require("./index");
 
 console.log("isNumberic(10)-> ", isNumberic(10));
 console.log('isNumberic("10")-> ', isNumberic("10"));
