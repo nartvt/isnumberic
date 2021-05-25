@@ -1,6 +1,6 @@
 {
   "name": "isnumberic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "verify number, is odd, is even",
   "main": "isnumberic.js",
   "scripts": {
