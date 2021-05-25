@@ -1,9 +1,8 @@
 {
   "name": "isnumberic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "verify number, is odd, is even",
   "main": "isnumberic.js",
-  "type":"module",
   "scripts": {
     "test": "node test.js"
   },

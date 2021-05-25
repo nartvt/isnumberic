@@ -38,4 +38,4 @@ function isEven(num) {
   throw "Input parameter is not a number!";
 }
 
-export { isNumberic, isOdd, isEven };
+module.exports = { isNumberic, isOdd, isEven };
