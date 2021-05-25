@@ -1,0 +1,22 @@
+{
+  "name": "isnumberic",
+  "version": "1.0.0",
+  "description": "verify input number or not",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nartvt/isNaN.git"
+  },
+  "keywords": [
+    "isNaN"
+  ],
+  "author": "nartvt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nartvt/isNaN/issues"
+  },
+  "homepage": "https://github.com/nartvt/isNaN#readme"
+}
