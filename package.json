@@ -1,22 +1,29 @@
 {
-  "name": "isnan",
-  "version": "1.0.0",
-  "description": "verify input number or not",
-  "main": "index.js",
+  "name": "isnumberic",
+  "version": "1.0.3",
+  "description": "verify number, is odd, is even",
+  "main": "isnumberic.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nartvt/isNaN.git"
+    "url": "git+ssh://git@github.com/nartvt/isNumberic.git"
   },
   "keywords": [
-    "isNaN"
+    "verify",
+    "number",
+    "javascript",
+    "check",
+    "number",
+    "javascript",
+    "isNumberic",
+    "javascript"
   ],
   "author": "nartvt",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nartvt/isNaN/issues"
+    "url": "https://github.com/nartvt/isNumberic/issues"
   },
-  "homepage": "https://github.com/nartvt/isNaN#readme"
+  "homepage": "https://github.com/nartvt/isNumberic#readme"
 }

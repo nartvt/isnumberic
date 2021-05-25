@@ -21,5 +21,21 @@ function isNumberic(num) {
   }
 }
 
+function isOdd(num) {
+  if (isNumberic(num)) {
+    if (Number(num) % 2 === 0) {
+      return false;
+    }
+    return true;
+  }
+  throw "Input parameter is not a number!";
+}
 
-export {isNumberic}
+function isEven(num) {
+  if (isNumberic(num)) {
+    return !isOdd(num);
+  }
+  throw "Input parameter is not a number!";
+}
+
+module.exports = { isNumberic, isOdd, isEven };
