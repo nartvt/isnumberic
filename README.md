@@ -15,14 +15,14 @@ veify input belong to number or not
 
 # Example 
 
-    var { isNumberic, isEven, isOdd } = require("./index");
+    var { isNumber, isEven, isOdd } = require("./index");
 
-    isNumberic(10); //-> true
-    isNumberic("10");  -> true 
-    isNumberic(""); -> false 
-    isNumberic(undefined); -> false
-    isNumberic(null);  -> false
-    isNumberic("abc");  -> false
+    isNumber(10); //-> true
+    isNumber("10");  -> true 
+    isNumber(""); -> false 
+    isNumber(undefined); -> false
+    isNumber(null);  -> false
+    isNumber("abc");  -> false
 
     isEven(10);  -> true
     isEven(9);  -> false

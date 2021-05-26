@@ -1,11 +1,11 @@
-var { isNumberic, isEven, isOdd } = require("./index");
+var { isNumber, isEven, isOdd } = require("./index");
 
-console.log("isNumberic(10)-> ", isNumberic(10));
-console.log('isNumberic("10")-> ', isNumberic("10"));
-console.log('isNumberic("")-> ', isNumberic(""));
-console.log("isNumberic(undefined)-> ", isNumberic(undefined));
-console.log("isNumberic(null)-> ", isNumberic(null));
-console.log("isNumberic(abc)-> ", isNumberic("abc"));
+console.log("isNumberic(10)-> ", isNumber(10));
+console.log('isNumberic("10")-> ', isNumber("10"));
+console.log('isNumberic("")-> ', isNumber(""));
+console.log("isNumberic(undefined)-> ", isNumber(undefined));
+console.log("isNumberic(null)-> ", isNumber(null));
+console.log("isNumberic(abc)-> ", isNumber("abc"));
 
 console.log("\n");
 console.log("isEven(10)-> ", isEven(10));

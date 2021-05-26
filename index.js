@@ -1,4 +1,4 @@
-function isNumberic(num) {
+function isNumber(num) {
     if (num === undefined) {
       return false;
     }
@@ -11,9 +11,9 @@ function isNumberic(num) {
     if (Number(num) === Number.NaN) {
       return false;
     }
-    if (typeof num === "number") {
+    if (typeof(num) === "number") {
       return true;
-    } else if (typeof num === "string") {
+    } else if (typeof(num) === "string") {
       if (num === "") {
         return false;
       }
@@ -22,7 +22,7 @@ function isNumberic(num) {
 }
 
 function isOdd(num) {
-    if (isNumberic(num)) {
+    if (isNumber(num)) {
       if (Number(num) % 2 === 0) {
         return false;
       }
@@ -32,10 +32,10 @@ function isOdd(num) {
 }
 
 function isEven(num) {
-    if (isNumberic(num)) {
+    if (isNumber(num)) {
       return !isOdd(num);
     }
     throw "Input parameter is not a number!";
 }
 
-module.exports = { isNumberic, isOdd, isEven };
+module.exports = { isNumber, isOdd, isEven };
