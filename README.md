@@ -13,16 +13,23 @@ veify input belong to number or not
 * "" -> false
 
 
-# Example 
+# Example
 
     var { isNumber, isEven, isOdd } = require("./index");
 
-    isNumber(10); //-> true
+    isNumber(10); -> true
     isNumber("10");  -> true 
     isNumber(""); -> false 
     isNumber(undefined); -> false
     isNumber(null);  -> false
     isNumber("abc");  -> false
+
+    isNotNumber(10); -> false
+    isNotNumber("10");  -> false 
+    isNotNumber(""); -> true 
+    isNotNumber(undefined); -> false
+    isNotNumber(null);  -> true
+    isNotNumber("abc");  -> true
 
     isEven(10);  -> true
     isEven(9);  -> false

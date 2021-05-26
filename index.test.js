@@ -1,4 +1,4 @@
-var { isNumber, isEven, isOdd } = require("./index");
+var { isNumber, isEven, isOdd, isNotNumber } = require("./index");
 
 console.log("isNumberic(10)-> ", isNumber(10));
 console.log('isNumberic("10")-> ', isNumber("10"));
@@ -6,6 +6,14 @@ console.log('isNumberic("")-> ', isNumber(""));
 console.log("isNumberic(undefined)-> ", isNumber(undefined));
 console.log("isNumberic(null)-> ", isNumber(null));
 console.log("isNumberic(abc)-> ", isNumber("abc"));
+
+console.log("\n");
+console.log("isNotNumber(10)-> ", isNotNumber(10));
+console.log('isNotNumber("10")-> ', isNotNumber("10"));
+console.log('isNotNumber("")-> ', isNotNumber(""));
+console.log("isNotNumber(undefined)-> ", isNotNumber(undefined));
+console.log("isNotNumber(null)-> ", isNotNumber(null));
+console.log("isNotNumber(abc)-> ", isNotNumber("abc"));
 
 console.log("\n");
 console.log("isEven(10)-> ", isEven(10));
