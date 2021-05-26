@@ -1,6 +1,6 @@
 # Example
 
-    var { isNumber, isEven, isOdd } = require("./index");
+    var { isNumber, isEven, isOdd, isNotNumber } = require("./index");
 
     isNumber(10); -> true
     isNumber("10");  -> true 
