@@ -28,3 +28,8 @@
     isOdd(undefined); ->  throw "Input parameter is not a number!";
     isOdd(null);  ->  throw "Input parameter is not a number!";
 
+    parseInt("10.7"); -> 10
+    parseFloat("10.7"); -> 10.7
+
+    parseInt("1a"); -> throw "Input parameter is not a number!";
+    parseFloat("a"); ->  throw "Input parameter is not a number!";

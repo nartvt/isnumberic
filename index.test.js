@@ -25,6 +25,6 @@ console.log("isOdd(9)-> ", isOdd(9));
 
 
 
-console.log(parseFloat("10.7")%10)
+console.log("parseFloat(\"10.7\") ->", parseFloat("10.7"))
 
-console.log(parseInt("10.7"))
+console.log("parseInt(\"10.7\") ->", parseInt("10.7"))
