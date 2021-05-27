@@ -1,4 +1,4 @@
-var { isNumber, isEven, isOdd, isNotNumber } = require("./index");
+var { isNumber, isEven, isOdd, isNotNumber, parseFloat, parseInt } = require("./index");
 
 console.log("isNumberic(10)-> ", isNumber(10));
 console.log('isNumberic("10")-> ', isNumber("10"));
@@ -23,3 +23,8 @@ console.log("\n");
 console.log("isOdd(10)-> ", isOdd(10));
 console.log("isOdd(9)-> ", isOdd(9));
 
+
+
+console.log(parseFloat("10.7")%10)
+
+console.log(parseInt("10.7"))
