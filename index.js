@@ -90,9 +90,6 @@ function findPrimeToN(number) {
   return sieveOfEratosthenes;
 }
 
-<<<<<<< HEAD
-module.exports = { isNumber, isOdd, isEven, isNotNumber,parseInt, parseFloat };
-=======
 module.exports = {
   isNumber,
   isOdd,
@@ -102,4 +99,3 @@ module.exports = {
   isPrime,
   findPrimeToN
 };
->>>>>>> isPrime, all of prime To N
