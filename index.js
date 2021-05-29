@@ -1,3 +1,4 @@
+const messageError = "Input parameter is not a number format!";
 function isNumber(num) {
   if (typeof (num) === "number") {
     return true;
@@ -9,6 +10,10 @@ function isNumber(num) {
   }else{
     return false;
   }
+}
+
+function isNumeric(num) {
+  return isNumber(num)
 }
 
 function isNotNumber(num) {
@@ -37,14 +42,64 @@ function isOdd(num) {
     }
     return true;
   }
-  throw "Input parameter is not a number!";
+  throw messageError;
 }
 
 function isEven(num) {
   if (isNumber(num)) {
     return !isOdd(num);
   }
-  throw "Input parameter is not a number!";
+  throw messageError;
 }
 
+
+function isPrime(num) {
+  if (isNumeric(num)) {
+    let value = parseInt(num);
+    if (value < 2) return false;
+    for (let i = 2; i * i <= value; i++) {
+      if (value % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  return false;
+}
+
+
+function findPrimeToN(number) {
+  let sieveOfEratosthenes = []
+  if (isNumber(number)) {
+    let N = parseInt(number);
+    let primes = Array.from({ length: N + 1 }, () => true)
+    primes[0] = false;
+    primes[1] = false;
+    for (let i = 2; i <= N; ++i) {
+      if (primes[i]) {
+        // Mark all the multiples of i as composite numbers
+        for (let j = i * i; j <= N; j += i) {
+          primes[j] = false;
+        }
+      }
+      if (primes[i]) {
+        sieveOfEratosthenes.push(i)
+      }
+    }
+  }
+  return sieveOfEratosthenes;
+}
+
+<<<<<<< HEAD
 module.exports = { isNumber, isOdd, isEven, isNotNumber,parseInt, parseFloat };
+=======
+module.exports = {
+  isNumber,
+  isOdd,
+  isEven,
+  isNotNumber,
+  isNumeric,
+  isPrime,
+  findPrimeToN
+};
+>>>>>>> isPrime, all of prime To N

@@ -1,7 +1,7 @@
 {
   "name": "isnumberic",
   "version": "0.0.5",
-  "description": "verify number, is odd, is even",
+  "description": "isNumber, isOdd, isEven, isNumeric, isNotNumber, isPrime, findPrimeToN",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -12,7 +12,11 @@
   },
   "keywords": [
     "isOdd",
+    "isPrime",
     "isEven",
+    "isPrime",
+    "findPrimeToN",
+    "find all prime number less than N",
     "verify",
     "numberic",
     "numeric",

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var { isNumber, isEven, isOdd, isNotNumber, parseFloat, parseInt } = require("./index");
+=======
+var { isNumber, isEven, isOdd, isNotNumber,isPrime, findPrimeToN } = require("./index");
+>>>>>>> isPrime, all of prime To N
 
 console.log("isNumberic(10)-> ", isNumber(10));
 console.log('isNumberic("10")-> ', isNumber("10"));
@@ -24,7 +28,20 @@ console.log("isOdd(10)-> ", isOdd(10));
 console.log("isOdd(9)-> ", isOdd(9));
 
 
+<<<<<<< HEAD
 
 console.log("parseFloat(\"10.7\") ->", parseFloat("10.7"))
 
 console.log("parseInt(\"10.7\") ->", parseInt("10.7"))
+=======
+console.log("\n");
+console.log("isPrime(10)-> ", isPrime(10));
+console.log("isPrime(7)-> ", isPrime(7));
+console.log("isPrime(\"A\")-> ", isPrime("A"));
+console.log("isPrime(undefined)-> ", isPrime(undefined));
+
+
+console.log("findPrimeToN(500)-> ", findPrimeToN(500));
+console.log("findPrimeToN(A)-> ", findPrimeToN("A"));
+console.log("findPrimeToN(undefined)-> ", findPrimeToN(undefined));
+>>>>>>> isPrime, all of prime To N
