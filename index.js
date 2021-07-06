@@ -15,11 +15,7 @@ function isNumber(num) {
 function isNumeric(num) {
   return isNumber(num)
 }
-
-function isNotNumber(num) {
-  return !isNumber(num)
-}
-
+ 
 function parseInt(num) {
    if(isNumber(num)){
      return Number.parseInt(num);
@@ -42,16 +38,15 @@ function isOdd(num) {
     }
     return true;
   }
-  throw messageError;
+  return false;
 }
 
 function isEven(num) {
   if (isNumber(num)) {
     return !isOdd(num);
   }
-  throw messageError;
+  return false;
 }
-
 
 function isPrime(num) {
   if (isNumeric(num)) {
@@ -68,34 +63,11 @@ function isPrime(num) {
 }
 
 
-function findPrimeToN(number) {
-  let sieveOfEratosthenes = []
-  if (isNumber(number)) {
-    let N = parseInt(number);
-    let primes = Array.from({ length: N + 1 }, () => true)
-    primes[0] = false;
-    primes[1] = false;
-    for (let i = 2; i <= N; ++i) {
-      if (primes[i]) {
-        // Mark all the multiples of i as composite numbers
-        for (let j = i * i; j <= N; j += i) {
-          primes[j] = false;
-        }
-      }
-      if (primes[i]) {
-        sieveOfEratosthenes.push(i)
-      }
-    }
-  }
-  return sieveOfEratosthenes;
-}
-
 module.exports = {
-  isNumber,
   isOdd,
   isEven,
-  isNotNumber,
   isNumeric,
-  isPrime,
-  findPrimeToN
+  parseInt,
+  parseFloat,
+  isPrime
 };
